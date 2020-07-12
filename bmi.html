@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sport Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+<div class="container">
+  <nav class="navbar">
+      <ul>
+        <li><a href="Index.html"><i class="fa fa-home"></i>  Home</a></li>
+        <li><a href="gallery.html"><i class="fa fa-photo"></i>  Gallery</a></li>
+        <li><a href="history.html"><i class="fa fa-history"></i>  History</a></li>
+        <li><a href="benefit.html"><i class="fa fa-thumbs-up"></i>  Benefit</a></li>
+        <li><a href="contact.html"><i class="fa fa-phone"></i>  Contact</a></li>
+        <li><a href="about.html"><i class="fa fa-user"></i>  About</a></li>
+        <li><a href="bmi.html"><i class="fa fa-clone"></i>  Service</a></li>
+      </nav>
+
+  <section id="bmi">
+    <h1>BMI Calculator</h1>
+    <p class="lead"><form name="bmiForm">
+        Your Weight(kg): <input type="text" name="weight" size="10"><br />
+        Your Height(cm): <input type="text" name="height" size="10"><br />
+        <input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+        Your BMI: <input type="text" name="bmi" size="10"><br />
+        You are : <input type="text" name="meaning" size="25"><br />
+        <input type="reset" value="Reset" /></form>
+    </p>
+  </section>
+
+  <script language="JavaScript">
+  <!--
+  function calculateBmi() {
+  var weight = document.bmiForm.weight.value
+  var height = document.bmiForm.height.value
+  if(weight > 0 && height > 0){
+  var finalBmi = weight/(height/100*height/100)
+  document.bmiForm.bmi.value = finalBmi
+  if(finalBmi < 18.5){
+  document.bmiForm.meaning.value = "Underweight."
+  }
+  if(finalBmi > 18.5 && finalBmi < 25){
+  document.bmiForm.meaning.value = "Normal."
+  }
+  if(finalBmi > 25){
+  document.bmiForm.meaning.value = "Overweight."
+  }
+  }
+  else{
+  alert("Please Fill in everything correctly")
+  }
+  }
+  //-->
+  </script>
+
+  <div class="footer">
+    <p>© All Right Reserved 2020</p>
+  </div>
+</body>
+</html>
